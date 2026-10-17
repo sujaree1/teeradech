@@ -1,0 +1,427 @@
+/* =========================
+   BASIC
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3f1e8;
+    color: #253126;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #80906b;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #253126;
+    padding: 8px 14px;
+    border: 1px solid #a7ad94;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #253126;
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 80vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-title {
+    color: #71805d;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 500px;
+    color: #626c5c;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button {
+    width: fit-content;
+    text-decoration: none;
+    background-color: #31432f;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 30px;
+}
+
+
+/* =========================
+   FEATURED
+========================= */
+
+.featured {
+    margin: 20px;
+    background-color: #d9ddca;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-text {
+    padding: 35px;
+}
+
+.number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #71805d;
+    margin-bottom: 15px;
+}
+
+.featured h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.featured-text > p {
+    line-height: 1.8;
+}
+
+.plant-info {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.plant-info p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   COLLECTION
+========================= */
+
+.collection {
+    padding: 100px 20px;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+}
+
+.section-heading > p:first-child {
+    color: #71805d;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.section-text {
+    color: #6e7569;
+}
+
+
+/* =========================
+   PLANT GRID
+========================= */
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.plant-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.plant-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.card-number {
+    color: #93a17b;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.card-text h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.card-text > p:last-child {
+    color: #7c8376;
+    font-size: 14px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background-color: #31432f;
+    color: white;
+    padding: 100px 20px;
+}
+
+.about .small-title {
+    color: #bdc8a7;
+}
+
+.about h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.about > p:last-child {
+    max-width: 600px;
+    color: #dce0d5;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #1f2c20;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #bdc8b9;
+    font-size: 13px;
+}
+
+.student {
+    margin-top: 25px;
+}
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #31432f;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top:hover {
+    background-color: #80906b;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 40px;
+    }
+
+    .hero {
+        padding: 100px 40px;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .featured {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px;
+    }
+
+    .featured-image img {
+        height: 100%;
+        min-height: 500px;
+    }
+
+    .featured-text {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .collection {
+        padding: 100px 40px;
+    }
+
+    .plant-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        padding: 120px 40px;
+    }
+
+    footer {
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .student {
+        margin-top: 0;
+        text-align: right;
+    }
+
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 1024px) {
+
+    header {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .hero {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .hero h1 {
+        font-size: 95px;
+    }
+
+    .featured {
+        margin: 70px;
+    }
+
+    .collection {
+        padding: 120px 70px;
+    }
+
+    .plant-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .plant-card img {
+        height: 420px;
+    }
+
+    .about {
+        padding: 140px 70px;
+    }
+
+    footer {
+        padding: 45px 70px;
+    }
+
+}
